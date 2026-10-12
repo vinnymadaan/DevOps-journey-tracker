@@ -1,0 +1,183 @@
+export const roadmapTemplate = [
+  {
+    id: 'linux-fundamentals',
+    title: 'Linux Fundamentals',
+    topics: [
+      { id: 'linux-architecture', name: 'Linux architecture', status: 'completed' },
+      { id: 'filesystem', name: 'File system', status: 'completed' },
+      { id: 'basic-commands', name: 'Basic commands', status: 'in-progress' },
+      { id: 'file-permissions', name: 'File permissions', status: 'not-started' },
+      { id: 'users-and-groups', name: 'Users and groups', status: 'not-started' },
+      { id: 'process-management', name: 'Process management', status: 'not-started' },
+      { id: 'shell-scripting', name: 'Shell scripting', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'networking',
+    title: 'Networking',
+    topics: [
+      { id: 'osi-model', name: 'OSI model', status: 'completed' },
+      { id: 'tcp-ip', name: 'TCP/IP', status: 'in-progress' },
+      { id: 'dns', name: 'DNS', status: 'not-started' },
+      { id: 'http-https', name: 'HTTP and HTTPS', status: 'not-started' },
+      { id: 'ip-addressing', name: 'IP addressing', status: 'not-started' },
+      { id: 'subnetting', name: 'Subnetting', status: 'not-started' },
+      { id: 'firewalls', name: 'Firewalls', status: 'not-started' },
+      { id: 'proxies', name: 'Proxies', status: 'not-started' },
+      { id: 'load-balancers', name: 'Load balancers', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'git-github',
+    title: 'Git and GitHub',
+    topics: [
+      { id: 'git-fundamentals', name: 'Git fundamentals', status: 'completed' },
+      { id: 'branching', name: 'Branching', status: 'completed' },
+      { id: 'merging', name: 'Merging', status: 'in-progress' },
+      { id: 'pull-requests', name: 'Pull requests', status: 'not-started' },
+      { id: 'github-repositories', name: 'GitHub repositories', status: 'not-started' },
+      { id: 'github-webhooks', name: 'GitHub webhooks', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'ci-cd',
+    title: 'CI/CD',
+    topics: [
+      { id: 'cicd-fundamentals', name: 'CI/CD fundamentals', status: 'in-progress' },
+      { id: 'jenkins-installation', name: 'Jenkins installation', status: 'not-started' },
+      { id: 'jenkins-jobs', name: 'Jenkins jobs', status: 'not-started' },
+      { id: 'jenkins-pipelines', name: 'Jenkins pipelines', status: 'not-started' },
+      { id: 'jenkinsfile', name: 'Jenkinsfile', status: 'not-started' },
+      { id: 'github-integration', name: 'GitHub integration', status: 'not-started' },
+      { id: 'webhooks', name: 'Webhooks', status: 'not-started' },
+      { id: 'build-automation', name: 'Build automation', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'docker',
+    title: 'Docker',
+    topics: [
+      { id: 'containers', name: 'Containers', status: 'completed' },
+      { id: 'images', name: 'Images', status: 'in-progress' },
+      { id: 'dockerfile', name: 'Dockerfile', status: 'not-started' },
+      { id: 'docker-compose', name: 'Docker Compose', status: 'not-started' },
+      { id: 'docker-networking', name: 'Docker networking', status: 'not-started' },
+      { id: 'docker-volumes', name: 'Docker volumes', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'kubernetes',
+    title: 'Kubernetes',
+    topics: [
+      { id: 'kubernetes-architecture', name: 'Kubernetes architecture', status: 'not-started' },
+      { id: 'pods', name: 'Pods', status: 'not-started' },
+      { id: 'deployments', name: 'Deployments', status: 'not-started' },
+      { id: 'services', name: 'Services', status: 'not-started' },
+      { id: 'configmaps', name: 'ConfigMaps', status: 'not-started' },
+      { id: 'secrets', name: 'Secrets', status: 'not-started' },
+      { id: 'ingress', name: 'Ingress', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'cloud-computing',
+    title: 'Cloud Computing',
+    topics: [
+      { id: 'cloud-fundamentals', name: 'Cloud fundamentals', status: 'not-started' },
+      { id: 'aws-ec2', name: 'AWS EC2', status: 'not-started' },
+      { id: 'iam', name: 'IAM', status: 'not-started' },
+      { id: 's3', name: 'S3', status: 'not-started' },
+      { id: 'vpc', name: 'VPC', status: 'not-started' },
+      { id: 'load-balancing', name: 'Load balancing', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'iac',
+    title: 'Infrastructure as Code',
+    topics: [
+      { id: 'terraform-fundamentals', name: 'Terraform fundamentals', status: 'not-started' },
+      { id: 'providers', name: 'Providers', status: 'not-started' },
+      { id: 'resources', name: 'Resources', status: 'not-started' },
+      { id: 'state-management', name: 'State management', status: 'not-started' },
+      { id: 'modules', name: 'Modules', status: 'not-started' },
+    ],
+  },
+  {
+    id: 'monitoring',
+    title: 'Monitoring',
+    topics: [
+      { id: 'prometheus', name: 'Prometheus', status: 'not-started' },
+      { id: 'grafana', name: 'Grafana', status: 'not-started' },
+      { id: 'application-monitoring', name: 'Application monitoring', status: 'not-started' },
+      { id: 'logging', name: 'Logging', status: 'not-started' },
+      { id: 'alerting', name: 'Alerting', status: 'not-started' },
+    ],
+  },
+]
+
+export const defaultJournalEntries = [
+  {
+    id: 'entry-1',
+    date: '2026-10-12',
+    topic: 'Docker',
+    duration: 2,
+    notes: 'Reviewed container images, layer caching, and `docker run` usage patterns.',
+    challenges: 'Needed more practice with container logs and cleanup commands.',
+    takeaways: 'Layer ordering affects rebuild speed and image efficiency.',
+  },
+  {
+    id: 'entry-2',
+    date: '2026-10-11',
+    topic: 'Linux Fundamentals',
+    duration: 3,
+    notes: 'Practiced file permissions, grep, and process monitoring using ps and top.',
+    challenges: 'File ownership confusion in root vs user groups.',
+    takeaways: 'Understanding permissions is critical before deploying services.',
+  },
+  {
+    id: 'entry-3',
+    date: '2026-10-10',
+    topic: 'Networking',
+    duration: 2.5,
+    notes: 'Studied DNS resolution and HTTP flow across client and server requests.',
+    challenges: 'Mapping DNS and TCP handshakes to real network events took time.',
+    takeaways: 'HTTP status codes and DNS caching are important debugging clues.',
+  },
+  {
+    id: 'entry-4',
+    date: '2026-09-30',
+    topic: 'Git',
+    duration: 1.5,
+    notes: 'Worked through branch creation and pull request review habits.',
+    challenges: 'Avoiding merge conflict mistakes when branching quickly.',
+    takeaways: 'Short-lived feature branches help keep delivery safer.',
+  },
+]
+
+export const defaultProjects = [
+  {
+    id: 'project-1',
+    name: 'CI Pipeline Essentials',
+    description: 'Built a Jenkins pipeline that runs lint, tests, and a Docker build for a Node app.',
+    technologies: ['Jenkins', 'Docker', 'Node.js'],
+    githubUrl: 'https://github.com/example/ci-pipeline',
+    status: 'Completed',
+    startDate: '2026-09-05',
+    completionDate: '2026-09-18',
+  },
+  {
+    id: 'project-2',
+    name: 'Kubernetes Local Cluster',
+    description: 'Set up a local Kubernetes cluster, configured deployments and services, and tested ingress.',
+    technologies: ['Kubernetes', 'YAML', 'Docker'],
+    githubUrl: 'https://github.com/example/k8s-local',
+    status: 'In progress',
+    startDate: '2026-10-01',
+    completionDate: '',
+  },
+]
+
+export const STORAGE_KEYS = {
+  roadmap: 'devops-roadmap',
+  journal: 'devops-journal',
+  projects: 'devops-projects',
+}
