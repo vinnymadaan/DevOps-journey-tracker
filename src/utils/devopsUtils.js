@@ -52,7 +52,8 @@ export function validateJournalEntry(entry) {
     errors.push('Topic studied is required.')
   }
 
-  if (!entry.duration || Number(entry.duration) <= 0) {
+  const duration = Number(entry.duration)
+  if (!entry.duration || !Number.isFinite(duration) || duration <= 0) {
     errors.push('Learning duration must be greater than zero.')
   }
 
