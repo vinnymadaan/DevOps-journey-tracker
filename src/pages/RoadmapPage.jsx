@@ -1,4 +1,4 @@
-import { buildRoadmapSnapshot } from '../utils/devopsUtils'
+import { buildRoadmapSnapshot } from '../utils/devopsUtils.js'
 
 const statusOptions = [
   { value: 'not-started', label: 'Not started' },

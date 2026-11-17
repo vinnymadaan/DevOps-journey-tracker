@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Layout from './components/Layout'
-import AnalyticsPage from './pages/AnalyticsPage'
-import DashboardPage from './pages/DashboardPage'
-import JournalPage from './pages/JournalPage'
-import ProjectsPage from './pages/ProjectsPage'
-import RoadmapPage from './pages/RoadmapPage'
-import { defaultJournalEntries, defaultProjects, roadmapTemplate, STORAGE_KEYS } from './data/defaultData'
+import Layout from './components/Layout.jsx'
+import AnalyticsPage from './pages/AnalyticsPage.jsx'
+import DashboardPage from './pages/DashboardPage.jsx'
+import JournalPage from './pages/JournalPage.jsx'
+import ProjectsPage from './pages/ProjectsPage.jsx'
+import RoadmapPage from './pages/RoadmapPage.jsx'
+import { defaultJournalEntries, defaultProjects, roadmapTemplate, STORAGE_KEYS } from './data/defaultData.js'
 import {
   addJournalEntry,
   removeJournalEntry,
   safeLocalStorageRead,
   safeLocalStorageWrite,
   updateRoadmapTopicStatus,
-} from './utils/devopsUtils'
+} from './utils/devopsUtils.js'
 
 function App() {
   const [roadmap, setRoadmap] = useState(() => safeLocalStorageRead(STORAGE_KEYS.roadmap, roadmapTemplate))

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Pencil, Trash2 } from 'lucide-react'
-import { getProjectStats } from '../utils/devopsUtils'
+import { getProjectStats } from '../utils/devopsUtils.js'
 
 const emptyForm = {
   name: '',

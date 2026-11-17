@@ -2,7 +2,7 @@ import { createElement } from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { afterEach, vi } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
-import App from '../App'
+import App from '../App.jsx'
 import {
   addJournalEntry,
   buildRoadmapSnapshot,
@@ -23,7 +23,7 @@ import {
   removeJournalEntry,
   safeLocalStorageRead,
   safeLocalStorageWrite,
-} from '../utils/devopsUtils'
+} from '../utils/devopsUtils.js'
 
 const renderAppAtRoute = (route) => {
   render(

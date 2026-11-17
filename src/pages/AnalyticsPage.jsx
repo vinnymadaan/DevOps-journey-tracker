@@ -10,7 +10,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
-import { buildWeeklyActivity, getMonthSummary, calculateRoadmapProgress } from '../utils/devopsUtils'
+import { buildWeeklyActivity, getMonthSummary, calculateRoadmapProgress } from '../utils/devopsUtils.js'
 
 function AnalyticsPage({ journalEntries, projects, roadmap }) {
   const weeklyData = buildWeeklyActivity(journalEntries)

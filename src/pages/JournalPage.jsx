@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Pencil, Search, Trash2 } from 'lucide-react'
-import { formatDate, getFormattedDate, getTopicOptions, validateJournalEntry } from '../utils/devopsUtils'
+import { formatDate, getFormattedDate, getTopicOptions, validateJournalEntry } from '../utils/devopsUtils.js'
 
 const emptyForm = {
   date: getFormattedDate(),

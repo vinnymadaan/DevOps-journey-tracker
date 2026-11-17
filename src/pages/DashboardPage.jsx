@@ -18,7 +18,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
-import { buildWeeklyActivity, calculateLearningStreak, calculateRoadmapProgress, getRecentActivity, getTopicProgressByPhase } from '../utils/devopsUtils'
+import { buildWeeklyActivity, calculateLearningStreak, calculateRoadmapProgress, getRecentActivity, getTopicProgressByPhase } from '../utils/devopsUtils.js'
 
 function StatCard({ icon: Icon, label, value, accent, helper }) {
   return (
