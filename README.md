@@ -76,7 +76,7 @@ src/
 │   ├── ProjectsPage.jsx
 │   └── RoadmapPage.jsx
 ├── tests/
-│   ├── devopsJourney.test.jsx
+│   ├── devopsJourney.test.js
 │   └── setup.js
 ├── utils/
 │   └── devopsUtils.js

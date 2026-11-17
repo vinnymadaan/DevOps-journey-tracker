@@ -1,3 +1,4 @@
+import { createElement } from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { afterEach, vi } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
@@ -24,6 +25,16 @@ import {
   safeLocalStorageWrite,
 } from '../utils/devopsUtils'
 
+const renderAppAtRoute = (route) => {
+  render(
+    createElement(
+      MemoryRouter,
+      { initialEntries: [route] },
+      createElement(App),
+    ),
+  )
+}
+
 beforeEach(() => {
   window.localStorage.clear()
 })
@@ -34,11 +45,7 @@ afterEach(() => {
 
 describe('DevOps Journey Tracker', () => {
   it('renders the dashboard welcome section', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <App />
-      </MemoryRouter>,
-    )
+    renderAppAtRoute('/')
 
     expect(screen.getByText(/Welcome back/i)).toBeInTheDocument()
     expect(screen.getByText(/Track your DevOps growth/i)).toBeInTheDocument()
@@ -142,11 +149,7 @@ describe('DevOps Journey Tracker', () => {
   })
 
   it('allows keyboard interaction in the journal form', () => {
-    render(
-      <MemoryRouter initialEntries={['/journal']}>
-        <App />
-      </MemoryRouter>,
-    )
+    renderAppAtRoute('/journal')
     const input = screen.getByLabelText(/date/i)
     fireEvent.change(input, { target: { value: '2026-10-12' } })
     expect(input.value).toBe('2026-10-12')
