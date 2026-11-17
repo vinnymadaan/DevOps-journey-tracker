@@ -22,4 +22,5 @@ jobs:
         with: 
           node-version: 22
 
-      - 
+      - name: Run automated tests
+        run: node --test
